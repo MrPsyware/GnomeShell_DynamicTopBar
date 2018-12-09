@@ -28,11 +28,11 @@ function debug(msg, level) {
 }
 
 function _getScreen() {
-    return global.screen || global.display;
+    return global.display;
 }
 
 function _getWorkspaceManager() {
-    return global.screen || global.workspace_manager;
+    return global.workspace_manager;
 }
 
 /*

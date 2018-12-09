@@ -32,12 +32,14 @@ INSTALL() {
  case $Parameter in
    root)
        printf "\033[32m Current mode: SuperUser.\033[0m\n"
+       install -d /usr/share/gnome-shell/extensions/dynamicTopBar@gnomeshell.feildel.fr
        sudo cp -r dynamicTopBar@gnomeshell.feildel.fr \
        /usr/share/gnome-shell/extensions/dynamicTopBar@gnomeshell.feildel.fr
    ;;
 
       *)
        printf "\033[32m Current mode: NormalUser.\033[0m\n"
+       install -d $HOME/.local/share/gnome-shell/extensions/dynamicTopBar@gnomeshell.feildel.fr
        cp -r dynamicTopBar@gnomeshell.feildel.fr \
        $HOME/.local/share/gnome-shell/extensions/dynamicTopBar@gnomeshell.feildel.fr
    ;;
